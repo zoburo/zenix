@@ -1,10 +1,3 @@
-# zenix
-
-High-performance and ergonomic Rust HTTP framework inspired by [Go Fiber](https://gofiber.io/).
-
-## Quickstart
-
-```rust
 use zenix::{Context, Server};
 
 #[tokio::main]
@@ -15,8 +8,3 @@ async fn main() {
 
     server.listen(":3000").await.unwrap();
 }
-```
-
-```shell
-cargo run --example hello-world
-```
