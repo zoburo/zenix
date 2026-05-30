@@ -13,7 +13,12 @@ pub struct Context {
 }
 
 impl Context {
-    pub(crate) fn new(method: Method, uri: Uri, headers: HeaderMap, body: Bytes) -> Self {
+    pub(crate) fn new(
+        method: Method,
+        uri: Uri,
+        headers: HeaderMap,
+        body: Bytes,
+    ) -> Self {
         Self {
             method,
             uri,

@@ -1,0 +1,21 @@
+[package]
+name = "zenix-derive"
+version = "0.0.1"
+edition = "2024"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/zoburo/zenix"
+homepage = "https://github.com/zoburo/zenix"
+description = "Proc-macro helpers for zenix — #[derive(FromRequest)] and #[zenix(from = \"...\")]."
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full"] }
+quote = "1"
+proc-macro2 = "1"
+
+[dev-dependencies]
+zenix = { path = "../zenix" }
+serde_json = "1.0"
